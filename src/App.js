@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
+import { Button } from "@material-ui/core";
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
     <div>
       {num}
       <br />
-      <button onClick={addOne}>Add</button>
+      <Button variant={"contained"} color="primary" onClick={addOne} >Click</Button>  
     </div>
   )
 }
